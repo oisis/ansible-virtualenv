@@ -4,22 +4,34 @@
 
 * Install packages(Debian/Ubuntu)
 
-```apt install python-virtualenv libssl-dev```
+``apt install python-virtualenv libssl-dev``
 
 * Create python virtual environment
 
-```virtualenv venv```
+``virtualenv ansible``
+
+* Make virtualenv relocatable
+
+``virtualenv --reloacatable ansible``
 
 * Use python virtual environment
 
-```source venv/bin/activate```
+``source venv/bin/activate``
 
 * install Ansible(latest)
 
-```pip install ansible```
+``pip install ansible``
 
 * Exit python virtual environment
 
-deactivate
+``deactivate``
 
-Done :)
+* Compress directory with ours portable Ansible version:
+
+``tar vxfc ansible.tar.xz ./ansible/*``
+
+* Move package to another server
+
+* Change virtualenv path in `bin/activate` file
+
+``sed -i -e 's|/tmp/ansible|/tmp/ansible-2.2.0.0|' /tmp/ansible-2.2.0.0/bin/activate``
