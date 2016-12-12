@@ -8,11 +8,11 @@
 
 * Create python virtual environment
 
-``virtualenv ansible``
+``virtualenv ansible-2.2.0-x86_64``
 
 * Make virtualenv relocatable
 
-``virtualenv --reloacatable ansible``
+``virtualenv --reloacatable ansible-2.2.0-x86_64``
 
 * Use python virtual environment
 
@@ -20,7 +20,7 @@
 
 * install Ansible(latest)
 
-``pip install ansible``
+``pip install ansible-2.2.0-x86_64``
 
 * Exit python virtual environment
 
@@ -28,7 +28,7 @@
 
 * Compress directory with ours portable Ansible version:
 
-``tar vxfc ansible.tar.xz ./ansible/*``
+``tar cfJ ansible-2.2.0-x86_64.tar.xz ./ansible-2.2.0-x86_64/*``
 
 * Move package to another server
 
