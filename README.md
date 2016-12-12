@@ -20,7 +20,7 @@
 
 * install Ansible(latest)
 
-``pip install ansible-2.2.0-x86_64``
+``pip install ansible``
 
 * Exit python virtual environment
 
